@@ -25,7 +25,7 @@
 		
 		<ul class="navbar">
 			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About Me</a></li>
+			<li><a href="#about">Skills</a></li>
 			<li><a href="#services">Arbeiten</a></li>
 			<li><a href="#resume">Lebenslauf</a></li>
 			<li><a href="#contact">Kontakt</a></li>
@@ -38,33 +38,60 @@
 			<h5>Hallo, ich bin</h5>
 			<h1>Idris Sennur</h1>
 			<h6>Ich bin ein <span>Mediengestalter für Digital und Print</span> in Ausbildung</h6>
-			<a href="#" class="btn">Lebenslauf</a>
+			
+			
 		</div>
 		
 		<div class="home-img">
 			<img src="Bilder/bild1.jpg">
 		</div>
+		
 	</section>
 	
 	<!-----start about----->
 	<section class="about" id="about">
-		<div class="about-img">
-			<img src="">
+		
+		
+		<div class="skilltext">
+			<p>Meine Fähigkeiten einfach veranschaulicht</p>
+			</div>
+		
+		
+		<div class="skill">
+			<div class="skill">
+				<div class="skill-name">HTML</div>
+			    	<div class="skill-bar">
+					<div class="skill-per" per="70%" style="max-width: 70%"></div>
+			</div>
+		</div>
+			
+				<div class="skill">
+				<div class="skill-name">CSS</div>
+			    	<div class="skill-bar">
+					<div class="skill-per" per="60%" style="max-width: 60%"></div>
+			</div>
+					</div>
+					
+						<div class="skill">
+				<div class="skill-name">JS</div>
+			    	<div class="skill-bar">
+					<div class="skill-per" per="20%" style="max-width: 20%"></div>
+			</div>
+							</div>
+							
+				<div class="skill">
+				<div class="skill-name">Photoshop</div>
+			    	<div class="skill-bar">
+					<div class="skill-per" per="80%" style="max-width: 80%"></div>
+			</div>
+					</div>
+							
+			
+			
+		
+
 		</div>
 		
-		<div class="about-text">
-			<h3>Über Mich</h3>
-			<h2>Lorem ipsum dolor sit amet, consectetur</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			<div class="count">
-				<a href="#"><span>5</span> Erfolgreiche Projekte</a>
-			</div>
-			
-			<div class="main-btn">
-				<a href="#" class="btn">Kontakt</a>
-				<a href="#" class="btn">Anschreiben</a>
-			</div>
-		</div>
 	</section>
 	
 	<!-----start about----->
@@ -74,69 +101,22 @@
 		</div>
 		
 		<div class="service-content">
-		<!--	<div id="myBtn" class="row">
-				<i class="bx bx-cast"></i>
-				<h3>Web Development</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-				
-				<div id="myModal" class="modal">
-					<div class="modal-content">
-						<img src="Bilder/bro.jpg">
-						<span class="close">close</span>
-					</div>
-				</div>
-			</div>
 		
-		
-			<div class="row">
-				
-				
-				<h3>Logo Design</h3>
-				<p>Elit, sed do eiusmod tempor et dolore magna aliqua</p>
-				<img id = "gymlogo" src="Bilder/gymlog.jpg">
-				<div id="logodes">
-				
-				
-				</div>
-			</div>
-
-			<div class="row">
-				<i class="bx bx-cast"></i>
-				<h3>Animationen</h3>
-				<p>Dolore magna aliqua</p>
-			</div>
-
-			<div class="row">
-				<i class="bx bx-cast"></i>
-				<h3>Illustrationen</h3>
-				<p>Incididunt ut labore et dolore magna aliqua</p>
-			</div>
-
-			<div class="row">
-				<i class="bx bx-camera" ></i>
-				<h3>Prdoukt-Entwicklung</h3>
-				<p>Tempor incididunt ut labore et dolore magna aliqua</p>
-			</div>
-
-			<div class="row">
-				<i class="bx bx-line-chart" ></i>
-				<h3>Typografische Arbeiten</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-			</div>-->
-			
 			<div id="test" class="box">
 				<div class="hover"><img onClick="enlargeImg()" src="Bilder/gymlog.JPG" id="img1"></div>
 				
 			</div>
 			
 			<div class="box">
-				<div class="hover"><img onClick="enlargeImg1()"  src="Bilder/naturex.JPG" id="img3"></div>
+				<div class="hover"><img onClick="enlargeImg1()"  src="Bilder/bro1.jpg" id="img3"></div>
 				<img onClick="resetImg()" src="Bilder/gymlogo.jpg" id="img2">
-				<img onClick="resetImg()" src="Bilder/bro.jpg" id="img5">
+				<img onClick="resetImg()" src="Bilder/bro2.jpg" id="img5">
+				<img onClick="resetImg()" src="Bilder/terapii.JPG" id="img6">
+				
 			</div>
 			
 			<div class="box">
-				<div class="hover"><img src="Bilder/terapiu.JPG" id="img4"></div>
+				<div class="hover"><img onClick="enlargeImg2()" src="Bilder/terapiu.JPG" id="img4"></div>
 			</div>
 			
 		</div>
@@ -199,6 +179,8 @@
 		img3.style.display = "block";
 		img4.style.display = "block";
 	    img5.style.display = "none";
+		img6.style.display = "none";
+		  
       }
 		
 		function enlargeImg1() {
@@ -215,7 +197,21 @@
 		
 		
       }
-      // Function to reset image size
+      
+		function enlargeImg2() {
+        // Set image size to 1.5 times original
+        img6.style.transform = "scale(3)";
+        // Animation effect
+        img6.style.transition = "transform 0.25s ease";
+		  
+		img2.style.display = "none";
+		img6.style.display = "block";
+		img.style.display = "none";
+		img3.style.display = "none";
+		img4.style.display = "none";
+		
+		
+      }
 
     </script>
 </body>

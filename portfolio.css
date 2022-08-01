@@ -169,7 +169,7 @@ section{
 	height: auto;
 }
 
-.about-text h3{
+.skilltext{
 	color: var(--text-color);
 	font-size: 30px;
 	font-weight: 300;
@@ -468,11 +468,69 @@ lebenslauf img{
 	cursor: pointer;
 }
 
+#img6 {
+	margin: 200px 130px;
+	height: 40%;
+	width: 40%;
+	display: none;
+	cursor: pointer;
+}
+
+#img4 {
+	cursor: pointer;
+}
+
 #contact h2 {
 	color: var(--main-color);
 	font-size: 50px;
 }
 
 #contact p{
-	font-size: 30px;
+	font-size: 20px;
+}
+
+#skill{
+	margin: 0;
+	padding: 0;
+	font-family: "ubuntu", sans-serif;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.skill{
+	width: 100%;
+	max-width: 600px;
+	padding: 0px 0px;
+}
+
+.skill-name{
+	font-size: 18px;
+	font-weight: 700;
+	color: #f1f1f1;
+	text-transform: uppercase;
+	margin: 20px 0;
+	
+}
+
+.skill-bar{
+	height: 14px;
+	background: #282828;
+	border-radius: 3px;
+}
+
+.skill-per{
+	height: 14px;
+	background: var(--main-color);
+	border-radius: 3px;
+	position: relative;
+	
+}
+
+.skilltext{
+	font-size: 50px;
+	display: flex;
+	
 }
