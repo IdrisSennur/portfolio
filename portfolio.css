@@ -456,6 +456,12 @@ lebenslauf img{
 	cursor: pointer;
 }
 
+#img3{
+	width: 90%;
+	height: 90%;
+	margin-left: 20px;
+}
+
 #img2 {
 	margin: 70px 0;
 	display: none;
